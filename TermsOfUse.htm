@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Terms of Use - The Ledger</title>
+<style>
+  :root{
+    --accent:#0984e3;
+    --bg:#f5f6fa;
+    --card:#ffffff;
+    --text:#2d3436;
+    --muted:#636e72;
+    --radius:12px;
+    --shadow: 0 6px 18px rgba(22,28,34,0.08);
+    --maxw:900px;
+    --gap:16px;
+  }
+
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0;
+    font-family: "Segoe UI", Roboto, system-ui, -apple-system, "Helvetica Neue", Arial;
+    background:var(--bg);
+    color:var(--text);
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    padding:20px;
+    display:flex;
+    justify-content:center;
+  }
+
+  .wrap{
+    width:100%;
+    max-width:var(--maxw);
+  }
+
+  header{
+    text-align:center;
+    margin-bottom:12px;
+  }
+
+  h1{
+    color:var(--accent);
+    font-size:1.45rem;
+    margin:0 0 6px 0;
+  }
+
+  .effective{
+    color:var(--muted);
+    font-size:0.92rem;
+    margin-bottom:18px;
+  }
+
+  .card{
+    background:var(--card);
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    padding:18px;
+    margin-bottom:var(--gap);
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+
+  .card:hover{ transform:translateY(-4px); box-shadow:0 12px 28px rgba(22,28,34,0.12); }
+
+  .card h2{
+    color:var(--accent);
+    margin:0 0 8px 0;
+    font-size:1.05rem;
+  }
+
+  p, li{
+    font-size:0.98rem;
+    line-height:1.5;
+    margin:0 0 10px 0;
+  }
+
+  ul{ padding-left:20px; margin:0 0 10px 0; }
+
+  a{ color:var(--accent); text-decoration:none; }
+  a:hover{ text-decoration:underline; }
+
+  /* Collapsible details styling */
+  details{
+    background:transparent;
+    border-radius:8px;
+    padding:0;
+  }
+
+  summary{
+    list-style:none;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+    padding:8px 0;
+    font-weight:600;
+    color:var(--accent);
+  }
+  summary::-webkit-details-marker{ display:none; }
+
+  .summary-title{ font-weight:700; color:var(--accent) }
+
+  .chev{
+    width:28px; height:28px;
+    border-radius:8px;
+    display:inline-grid; place-items:center;
+    background:rgba(9,132,227,0.08);
+    color:var(--accent);
+    transform:rotate(0deg);
+    transition:transform .18s ease;
+  }
+
+  details[open] .chev{ transform:rotate(180deg); }
+
+  .content{ padding-top:6px; color:var(--text); }
+
+  footer{
+    text-align:center;
+    color:var(--muted);
+    font-size:0.9rem;
+    margin-top:8px;
+  }
+
+  /* responsive */
+  @media (max-width:520px){
+    body{ padding:14px }
+    .card{ padding:14px }
+    h1{ font-size:1.2rem }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap" role="main">
+    <header>
+      <h1>Terms of Use — The Ledger</h1>
+      <div class="effective"><strong>Effective Date:</strong> 01 November 2025</div>
+    </header>
+
+    <!-- Intro -->
+    <section class="card" aria-labelledby="t-intro">
+      <h2 id="t-intro">1. Acceptance of Terms</h2>
+      <p>Welcome to <strong>The Ledger</strong>. By downloading, accessing, or using our mobile application (the “App”), you agree to be bound by these Terms of Use (“Terms”). If you do not agree, please do not use the App.</p>
+    </section>
+
+    <!-- License -->
+    <section class="card" aria-labelledby="t-license">
+      <h2 id="t-license">2. License & Access</h2>
+      <p>The Ledger grants you a limited, non-exclusive, non-transferable, revocable license to use the App for personal, non-commercial purposes in accordance with these Terms. You may not copy, modify, distribute, sell, or lease any part of our App or its content.</p>
+    </section>
+
+    <!-- User conduct -->
+    <section class="card" aria-labelledby="t-conduct">
+      <h2 id="t-conduct">3. User Conduct</h2>
+      <details>
+        <summary>
+          <span class="summary-title">What we expect from you</span>
+          <span class="chev">▾</span>
+        </summary>
+        <div class="content">
+          <p>While using the App you agree not to:</p>
+          <ul>
+            <li>Use the App in a way that violates applicable laws or third-party rights.</li>
+            <li>Attempt to reverse-engineer, hack, or interfere with the App or its infrastructure.</li>
+            <li>Submit content that is unlawful, harmful, offensive, or that infringes others’ rights.</li>
+          </ul>
+        </div>
+      </details>
+    </section>
+
+    <!-- Accounts -->
+    <section class="card" aria-labelledby="t-account">
+      <h2 id="t-account">4. Accounts & Security</h2>
+      <details>
+        <summary>
+          <span class="summary-title">Accounts, passwords and responsibility</span>
+          <span class="chev">▾</span>
+        </summary>
+        <div class="content">
+          <p>Some features may require an account. You are responsible for keeping your credentials secure and for all activities that occur under your account. Notify us immediately if you suspect unauthorized access.</p>
+        </div>
+      </details>
+    </section>
+
+    <!-- Payments (if any) -->
+    <section class="card" aria-labelledby="t-payments">
+      <h2 id="t-payments">5. Payments & Subscriptions (if applicable)</h2>
+      <details>
+        <summary>
+          <span class="summary-title">Billing and refunds</span>
+          <span class="chev">▾</span>
+        </summary>
+        <div class="content">
+          <p>If The Ledger offers paid features, purchases are handled through the platform store (Google Play / App Store). Refunds and billing disputes are processed according to the store’s policies and applicable law.</p>
+        </div>
+      </details>
+    </section>
+
+    <!-- IP -->
+    <section class="card" aria-labelledby="t-ip">
+      <h2 id="t-ip">6. Intellectual Property</h2>
+      <p>All rights, title and interest in and to The Ledger, including its design, text, graphics, code, and trademarks, are owned by or licensed to us. You may not use our trademarks without prior written permission.</p>
+    </section>
+
+    <!-- Third parties -->
+    <section class="card" aria-labelledby="t-third">
+      <h2 id="t-third">7. Third-Party Services</h2>
+      <p>The App may integrate third-party services (analytics, crash reporting, payment processors). Those services have their own terms and privacy policies; using the App may cause data to be shared with them as described in our Privacy Policy.</p>
+    </section>
+
+    <!-- Disclaimers -->
+    <section class="card" aria-labelledby="t-disclaim">
+      <h2 id="t-disclaim">8. Disclaimers</h2>
+      <details>
+        <summary>
+          <span class="summary-title">No warranties</span>
+          <span class="chev">▾</span>
+        </summary>
+        <div class="content">
+          <p>The Ledger is provided “as is” and “as available” without warranties of any kind. We do not guarantee the App will be error-free, uninterrupted, or secure. Use at your own risk.</p>
+        </div>
+      </details>
+    </section>
+
+    <!-- Liability -->
+    <section class="card" aria-labelledby="t-liability">
+      <h2 id="t-liability">9. Limitation of Liability</h2>
+      <p>To the fullest extent permitted by law, The Ledger and its affiliates will not be liable for indirect, incidental, special, punitive, or consequential damages arising from your use of the App. Our aggregate liability is limited to the amount you have paid (if any) in the last 12 months.</p>
+    </section>
+
+    <!-- Termination -->
+    <section class="card" aria-labelledby="t-termination">
+      <h2 id="t-termination">10. Termination</h2>
+      <p>We may suspend or terminate access to the App at any time for violation of these Terms or for legal reasons. On termination, the license granted to you ends immediately.</p>
+    </section>
+
+    <!-- Changes -->
+    <section class="card" aria-labelledby="t-changes">
+      <h2 id="t-changes">11. Changes to Terms</h2>
+      <p>We may update these Terms from time to time. Material changes will be communicated via the App or by updating the Effective Date shown at the top. Continued use after changes constitutes acceptance.</p>
+    </section>
+
+    <!-- Governing Law -->
+    <section class="card" aria-labelledby="t-law">
+      <h2 id="t-law">12. Governing Law & Disputes</h2>
+      <p>These Terms are governed by the laws of the jurisdiction in which The Ledger operates, without regard to conflict of law rules. Disputes will be resolved in the appropriate courts unless agreed otherwise.</p>
+    </section>
+
+    <!-- Contact -->
+    <section class="card" aria-labelledby="t-contact">
+      <h2 id="t-contact">13. Contact Us</h2>
+      <p>If you have questions about these Terms, email us at <a href="mailto:support@theledger.com">support@theledger.com</a>.</p>
+    </section>
+
+    <footer>
+      <div>© <strong>The Ledger</strong> — All rights reserved.</div>
+    </footer>
+  </div>
+</body>
+</html>
