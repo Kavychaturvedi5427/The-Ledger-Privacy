@@ -12,7 +12,7 @@ This repository contains the official **Privacy Policy** and **Terms of Use** do
 |------|--------------|
 | [`privacy_policy.htm`](privacy_policy.htm) | Details how The Ledger collects, stores, and protects user data. |
 | [`TermsOfUse.htm`](TermsOfUse.htm) | Outlines the usage terms, responsibilities, and disclaimers for users of The Ledger. |
-| [`TermsOfUse.htm`](TermsOfUse.htm) | A support page to contact the dev or report issues. |
+| [`help_desk.htm`](help_desk.htm) | A support page to contact the dev or report issues. |
 
 ---
 
